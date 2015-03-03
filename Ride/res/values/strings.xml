@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ride</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="texto_bonus">A cada carona oferecida, você acumula pontos de acordo com a avaliação do caroneiro que podem ser trocados por bônus como descontos em postos de gasolina, serviços em oficinas mecânicas e acessórios em estabelecimentos cadastrados na cidade de origem da placa do seu veículo. Ou ainda, você pode doar os seus pontos, que serão convertidos em dinheiro para uma instituição de caridade.</string>
+
+</resources>

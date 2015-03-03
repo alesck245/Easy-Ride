@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/cidadeOrigem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/estadoOrigem" />
+
+            <Spinner
+                android:id="@+id/cidadeDestino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/estadoDestino" />
+
+            <Button
+                android:id="@+id/date_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentLeft="true"
+                android:text="Data" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Saída"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/estadoOrigem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cidadeOrigem"
+                android:layout_centerHorizontal="true"
+                android:text="Destino"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/estadoDestino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/idade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="41dp"
+                android:text="Número de Vagas" />
+
+            <EditText
+                android:id="@+id/campoVagas"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/idade"
+                android:layout_alignRight="@+id/campoHorarioSaida"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/campoDespesas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/idade"
+                android:layout_alignLeft="@+id/campoVagas"
+                android:layout_alignRight="@+id/campoVagas"
+                android:ems="10"
+                android:inputType="numberDecimal" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cidadeDestino"
+                android:layout_marginTop="22dp"
+                android:layout_toLeftOf="@+id/textView5"
+                android:text="Custo (Opcional)" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idade"
+                android:layout_alignLeft="@+id/idade"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:text="Período de Saída" />
+
+            <Spinner
+                android:id="@+id/campoHorarioSaida"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView4"
+                android:layout_below="@+id/campoVagas"
+                android:layout_marginLeft="17dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" >
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/motorista_adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-6499525053437882/3390977657" >
+
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+</RelativeLayout>

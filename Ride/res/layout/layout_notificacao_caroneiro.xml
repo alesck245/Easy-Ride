@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light" >
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="14dp"
+                android:text="CUSTOS:"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/foto_Motorista"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/carregando"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tel_Motorista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/nome_Motorista"
+                android:layout_marginRight="14dp"
+                android:text="(35)9198-0569"
+                android:textColor="@android:color/black"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nome_Motorista"
+                android:layout_below="@+id/nome_Motorista"
+                android:layout_marginTop="21dp"
+                android:text="PERÍODO DA VIAGEM:"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/email_motorista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView3"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_alignRight="@+id/tel_Motorista"
+                android:text="Noite"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textValor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView1"
+                android:layout_alignBottom="@+id/textView1"
+                android:layout_alignRight="@+id/email_motorista"
+                android:text="TextView"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/nome_Motorista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_below="@+id/foto_Motorista"
+                android:layout_marginTop="23dp"
+                android:text="Henrique"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_below="@+id/textView1"
+                android:layout_marginTop="14dp"
+                android:text="VAGAS" />
+
+            <TextView
+                android:id="@+id/vagas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView2"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignRight="@+id/textValor"
+                android:text="TextView" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

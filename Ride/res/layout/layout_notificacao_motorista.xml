@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/carregando" />
+
+            <TextView
+                android:id="@+id/idade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/fulano"
+                android:layout_alignBottom="@+id/fulano"
+                android:layout_toRightOf="@+id/fulano"
+                android:text=", 26"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/bConfirmarCarona"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/bNegarCarona"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/bNegarCarona"
+                android:background="@drawable/botao_azul"
+                android:drawableLeft="@drawable/ic_action_good"
+                android:layout_marginRight="10dp"
+                android:paddingRight="20dp"
+                android:text="Confirmar"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/profissao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/idade"
+                android:layout_alignBottom="@+id/idade"
+                android:layout_alignRight="@+id/bConfirmarCarona"
+                android:text="serviços gerais"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/fulano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/bNegarCarona"
+                android:layout_below="@+id/imageView1"
+                android:layout_marginTop="21dp"
+                android:text="Henrique"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bNegarCarona"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/idade"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/botao_vermelho"
+                android:drawableLeft="@drawable/ic_action_bad"
+                android:paddingRight="20dp"
+                android:text="Recusar"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
